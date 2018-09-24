@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditChildActivity">
+
+    <EditText
+        android:id="@+id/cname1"
+        android:layout_width="364dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/cage1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/cage1"
+        android:layout_width="362dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/age"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/caddress1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cname1" />
+
+    <EditText
+        android:id="@+id/caddress1"
+        android:layout_width="360dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/address"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/cdob1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cage1" />
+
+    <EditText
+        android:id="@+id/cdob1"
+        android:layout_width="362dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/dob"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/cschedule1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caddress1" />
+
+    <EditText
+        android:id="@+id/cschedule1"
+        android:layout_width="360dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/schedule"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/csave1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cdob1" />
+
+    <Button
+        android:id="@+id/csave1"
+        android:layout_width="107dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="128dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cschedule1" />
+
+</android.support.constraint.ConstraintLayout>
